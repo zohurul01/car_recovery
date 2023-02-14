@@ -1,0 +1,266 @@
+/**
+* Template Name: Car Recovery - v1.0
+* Template URL: https://zohirs.com
+* Author: Zohir
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --iana-primary: #18191B;
+  --iana-secondary: #fff;
+  --iana-white: #fff;
+  --iana-light: #f8f9fa;
+  --iana-dark: #000;
+  --iana-hover: #61CE70;
+
+  --iana-font: 'Roboto', sans-serif;
+}
+
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: var(--iana-font);
+  color: var(--iana-white);
+  font-size: 16px;
+  font-weight: 400;
+  background: var(--iana-primary);
+}
+
+a {
+  color: var(--iana-white);
+  text-decoration: none;
+  transition: all ease-in-out 0.2s;
+}
+
+a:hover {
+  color: var(--iana-white);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--iana-font);
+  font-weight: 500;
+}
+
+button {
+  outline: none;
+}
+
+@media (max-width: 992px) {
+
+  .container,
+  .container-fluid,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+header {
+  padding: 30px 0;
+}
+
+header .col-en {
+  text-align: left;
+}
+
+header .col-ar {
+  text-align: right;
+}
+
+header h1 {
+  font-size: 1.6rem;
+}
+
+header h1.header-ar {
+  font-size: 1.9rem;
+  font-weight: 400;
+}
+
+/*--------------------------------------------------------------
+# Main
+--------------------------------------------------------------*/
+main {
+  padding: 80px 0;
+  min-height: calc(100vh - 265px);
+}
+
+.page-title {
+  padding-bottom: 50px;
+}
+
+.page-title .title-col {
+  display: flex;
+  gap: 20px;
+}
+
+.page-title .title-col h2 {
+  font-size: 1.8rem;
+}
+
+.page-content .container {
+  max-width: 380px;
+
+}
+
+.whatsapp {
+  margin-bottom: 50px;
+}
+
+.whatsapp .whatsapp-link {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.whatsapp .icon i {
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  color: var(--iana-hover);
+}
+
+.whatsapp .text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.whatsapp .text p {
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.whatsapp .text p.whatsapp-text-ar {
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.contact-us .contact-title {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.contact-us .contact-info {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-us .contact-info .contact-info-item {
+  margin-bottom: 20px;
+}
+
+.contact-info .contact-info-item .icon-list {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.contact-info .contact-info-item .icon-list i {
+  font-size: 1.6rem;
+  margin-right: 10px;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+footer {
+  padding: 30px 0;
+  text-align: center;
+  background: var(--iana-dark);
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+/* -----Responsive Css-----  */
+
+@media (max-width:1024px) {
+  body {
+    font-size: 14px;
+  }
+
+  header h1 {
+    font-size: 1.3rem;
+  }
+
+  header h1.header-ar {
+    font-size: 1.6rem;
+  }
+
+  main {
+    padding: 60px 0;
+    min-height: calc(100vh - 280px);
+  }
+
+  .page-title .title-col h2 {
+    font-size: 1.3rem;
+  }
+
+  .page-content .container {
+    max-width: 420px;
+
+  }
+
+  .whatsapp .icon i {
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+  }
+
+  .whatsapp .text p {
+    font-size: 1rem;
+  }
+
+  .whatsapp .text p.whatsapp-text-ar {
+    font-size: 1.2rem;
+  }
+
+  .contact-us .contact-title {
+    font-size: 1.4rem;
+  }
+
+  .contact-us .contact-info .contact-info-item {
+    margin-bottom: 15px;
+  }
+
+  .contact-info .contact-info-item .icon-list {
+    font-size: 1rem;
+  }
+
+  .contact-info .contact-info-item .icon-list i {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width:768px) {
+  .page-content .container {
+    max-width: 100%;
+
+  }
+}
+
+@media (min-width: 576px) {
+  .page-content .container {
+    max-width: 540px;
+  }
+}
